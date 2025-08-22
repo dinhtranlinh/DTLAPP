@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DTLAPP — Official Website</title>
+  <meta name="description" content="DTLAPP helps you repurpose and publish your videos across platforms, fast and reliably." />
+  <link rel="icon" href="/favicon.ico" />
+  <meta property="og:title" content="DTLAPP — Official Website" />
+  <meta property="og:description" content="Manage, transform, and publish your short‑form videos to TikTok with ease." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dtlapp.com/" />
+  <meta property="og:image" content="https://dtlapp.com/og-image.png" />
+  <style>
+    :root{--bg:#0b0f14;--card:#121821;--text:#e6eef8;--muted:#9fb0c6;--brand:#6ca0ff;--accent:#27dea2}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+    .container{max-width:1100px;margin:0 auto;padding:40px 20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+    .logo .mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#ff5478,#6ca0ff 60%,#27dea2);box-shadow:0 8px 20px rgba(108,160,255,.25)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    nav a:hover{color:var(--text)}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;margin-top:48px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:28px}
+    h1{font-size:40px;margin:0 0 10px}
+    .lead{color:var(--muted);font-size:18px;line-height:1.6}
+    .cta{margin-top:20px;display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;text-decoration:none;border:1px solid rgba(255,255,255,.12)}
+    .btn-primary{background:linear-gradient(135deg,#6ca0ff,#27dea2);color:#081019;border:none;font-weight:700}
+    .btn-secondary{color:var(--text)}
+    .badges{display:flex;gap:10px;margin-top:14px;color:var(--muted);font-size:13px}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+    .feature{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
+    .feature h3{margin:0 0 8px;font-size:18px}
+    footer{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:14px}
+    .links{display:flex;gap:14px;flex-wrap:wrap}
+    @media (max-width:980px){.hero{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="/">
+        <div class="mark" aria-hidden="true"></div>
+        <strong>DTLAPP</strong>
+      </a>
+      <nav>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Repurpose & publish videos, fast.</h1>
+        <p class="lead">DTLAPP helps creators and teams transform short‑form videos and post to TikTok with consistent quality (360/720/1080) — reliably and at scale.</p>
+        <div class="cta">
+          <!-- Replace with your app dashboard or signup URL -->
+          <a class="btn btn-primary" href="https://app.dtlapp.com/" rel="noopener">Open App</a>
+          <!-- Replace with your OAuth connect route if you want a connect CTA on homepage -->
+          <a class="btn btn-secondary" href="https://app.dtlapp.com/connect" rel="noopener">Connect TikTok</a>
+        </div>
+        <div class="badges">
+          <span>• Content Posting API Ready</span>
+          <span>• OAuth2 (TikTok / Google)</span>
+          <span>• GPU‑accelerated processing</span>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>Per‑channel mapping</h3>
+          <p>Map each YouTube source to a TikTok account. Schedule, templates, and quality per channel.</p>
+        </div>
+        <div class="feature">
+          <h3>Quality presets</h3>
+          <p>Export in 360p, 720p, or 1080p with safe defaults and size‑aware bitrates.</p>
+        </div>
+        <div class="feature">
+          <h3>Speed‑first pipeline</h3>
+          <p>Pass‑through when possible, GPU transcode only when needed for best latency.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="/terms">Terms of Service</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a id="contact" href="mailto:support@dtlapp.com">support@dtlapp.com</a>
+      </div>
+      <p>© <span id="year">2025</span> DTLAPP. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Auto‑set year if you embed this as a static page reused next years
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
